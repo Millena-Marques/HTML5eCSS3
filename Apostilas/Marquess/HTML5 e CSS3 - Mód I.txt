@@ -1,0 +1,140 @@
+HTML5 e CSS3 - Mód I
+	
+	1- Caracteres, parágrafos e quebra de linha/Hierarquia de Títulos: 
+		<h1> significam "heading 1", no inglês quer dizer "cabeçalho 1" - em HTML também podemos encontrar variações dessa tag como: h2, h3, h4, h5 e h6. Eles apresentam uma hierarquia que DEVE ser seguida.
+		<hr> significa "horizontal row" no iglês, ou seja, essa tag cria linhas horizontais. - Ela não apresenta tag de fechamento. -
+		<p> indica parágrafo. Se for preciso quebrar o texto em algum lugar, pode se usar a tag <br>; que por sua vez significa "break row", ou seja, quebra de linha. - Ela também não apresenta tag de fechamento. -
+	
+	2- Formatação de Texto: 
+		Em HTML nós temos os Unicodes, que são códigos únicos para adicionar emojis, símbolos especiais, etc. Para usá-los colocamos a abreviação '&#x' + Unicode, lembrando sempre de retirar o 'U+'.
+		<!-- servem para criar comentários que serão visíveis no código porém invisíveis no documento/site -->
+		Se quisermos dar DESTAQUE ou transformar o texto em NEGRITO, devemos colocar a tag <strong> (que quer dizer "negrito"). Já se quisermos dar ÊNFASE ou transformar o texto em ITÁLICO, podemos colocar a tag <em> (quer dizer "emphasis" que em Potuguês significa "ENFÂSE").
+		Se eu quiser colocar o texto marcado como se fosse em marca-textos posso adicionar a tag <mark>.
+		No caso dos textos GRANDES e PEQUENOS, usamos as tags <big> e <small> (lembrando que a tag <big> está em desuso, se for necessário usá-la teremos o CSS3 mais à frente).
+		Podemos marcar um texto como DELETADO para indicar que ele deve ser lido, mas não considerado; fazemos isso usando a tag <del>. Também podemos marcar um texto INSERIDO para indicar ênfase e que ele está ali para ser lido e compreendido; nele usamos a tag <ins>.
+		Para inserir coisas SOBRESCRITAS, usamos a tag <sup>. Já para inserir coisas SUBSCRITAS, usamos a tag <sub>.
+		Para reprensentar CÓDIGO-FONTE usamos a tag <code>. A sua principal função é de facilitar a leitura modificando a fonte para mono-espaçado. Porém, quando colocamos esta tag ela não o reajusta para parecer realmente um código, pelo contrário, deixa parecido um texto comum que somente foi modificado a fonte. Por isso, usamos usamos a tag <pre> para indicar uma PRÉ-FORMATAÇÃO do código, deixando-o realmente parecido com um.
+		Para criar uma CITAÇÃO em HTML5, podemos usar a tag <q> (do Inglês "quote" que significa "citar"). O texto que estiver entre esta tag automaticamente receberá as aspas, mas não terá nenhum deslocamento. Também podemos criar CITAÇÕES EM BLOCO. Nesse caso, colocaremos tudo dentro de <blockquote> (em inglês significa citação em bloco) e o texto ganhará um recuo automaticamente. Podemos também colocar um link para o texto original, usando o parâmetro "cite" dentro da tag.
+		Sempre que quiser escrever uma ABREVIATURA e deixar claro o seu significado tanto ao leitor/usuário quanto ao navegador, use a tag <abbr>. Assim, quando passarmos o mouse na sigla, um pequeno texto aparecerá com o seu significado.
+
+	3- Imagens e Favicon: 
+		Após salvar as imagens na pasta do código, nós abriremos por meio da pasta o app de desenvolvimento e lá estará as imagens abaixo do documento. Quando precisarmos colocá-las no código faremos o seguinte: <img src="Imagem" alt="">. 
+		A tag img = Imagem; src = Srcset/Source (significa "Conjunto de dados/Origem", que no caso é o que guarda/origina os dados e o link da imagem); alt = Alternative Text Description of the Image (ou seja, Descrição de Texto Alternativa da Imagem. Serve para descrever ao leitor de imagem o que está sendo mostrado, é usado principalmente por deficientes visuais.)
+		Quando a imagem tiver direitos autorais podemos colocar dentro de: "...alt="Descrição da Imagem, crédito: Nome do Autor".
+		Para adicionar um Favicon é só escolher o seu ícone baixar em forma de ICO (abreviatura pra "ícone"). No código nós iremos na parte "head" e abaixo do "title" iremos colocar "link:favicon".
+	
+	4- Listas: 
+		A HTML chama de ORDERED LISTS (listas ordenadas) todas aquelas listas onde a ordem dos itens é algo muito importante. Para criar uma ordered list, vamos usar a tag <ol> para delimitar a lista e <li> (list item) para identificar cada item da lista. A tag <ol> possui um atributo "type", onde configuramos o tipo de marcador da lista atual. As opções de valores para esse parâmetro são:
+
+			1 - Valor padrão. Cria listas numeradas. Ex: 1, 2, 3, 4, ...
+			A - Cria listas alfabéticas em maiúsculas. Ex: A, B, C, D,
+			a - Cria listas alfabéticas em minúsculas. Ex: a, b, c, d, ...
+			I - Cria listas com algarismos romanos em maiúsculas. Ex: I, II, III, IV,
+			i - Cria listas com algarismos romanos em minúsculas. Ex: i, ii, iii, iv,
+
+		Você também pode indicar o início da contagem usando o parâmetro start. Por exemplo, a tag <ol type="I" start = "5"> vai gerar itens numerados como V, VI, VII, VIII, IX,...
+		As LISTAS NÃO ORDENADAS (unordered lists), também conhecidas como "listas com marcadores". Listas não ordenadas são aquelas em que a ordem dos itens não importam. Elas são uma ótima maneira de organizar itens que não precisam estar em uma ordem específica. Para criar uma lista não ordenada, use a tag <ul> para delimitar a lista e a tag <li> para criar cada item da lista. O marcador padrão para listas não ordenadas é um ponto preto. Você pode alterar o marcador usando a propriedade "type" da tag <ul>. Os valores possíveis para esta propriedade são:
+
+			-> disc - marcador padrão
+			-> circle - marcador com uma borda preta
+	 		-> square - marcador em forma de quadrado
+
+		Toda LISTA DE DEFINIÇÕES está dentro de uma tag <dl> (definition list). Cada termo é um <dt> (definition term) e cada descrição é um <dd> (definition description).
+	
+	5- Links e Âncoras: 
+		Para um hyperlink, devemos criar ÂNCORAS através da tag <a>. O principal atributo dessa tag é o "href", que cria uma referência hipertexto. Dentro do atributo "href", devemos colocar uma URL completa para outro site. Além disso, como estamos criando ÂNCORAS com o uso de sites externos, é recomendado usar os atributos -> target="_blank" e rel="external" <- dentro da tag. O atributo rel é usado para indicar a natureza dos LINK INTERNOS/EXTERNOS. Os valores possíveis são:
+
+			-> next: indica que o link é para a próxima parte do documento atual
+			-> prev: indica que o link é para a parte anterior do documento atual
+			-> author: indica que é um link para o site do autor do artigo atual
+			-> external: indica que é um link para outro site que não faz parte do site
+			-> nofollow: indica que é um link para um site não endossado, como um link pago
+		
+		O hreflang é um atributo que permite indicar qual é o idioma principal do site para onde o link está desviando o fluxo de navegação. Isso vai permitir avisar ao navegador e a softwares de tradução como lidar caso o visitante opte por traduzir automaticamente os conteúdos. O target é um atributo que permite controlar onde o site de destino vai abrir. Os valores possíveis são:
+
+			-> _blank: abre o link em uma nova janela em branco
+			-> _self: abre o link na janela ou frame atual (padrão)
+			-> _top: desfaz todos os frames e abre o destino no navegador completo
+			-> _parent: similar ao uso do top em uma referência à janela mãe
+			-> nome-do-frame: caso esteja usando frames, indicar o nome da janela a abrir
+	
+		Para fazer LINKS PARA DOWNLOADS precisamos codar o seguinte:
+		
+			<h1>Links para download</h1>
+    				<ul>
+        				<li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        				<li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    				</ul>`
+		
+	6- Media Types: 
+		Tipos de "media types" usados no dia-a-dia:
+
+			-> application/zip: Um arquivo compactado que pode conter arquivos de qualquer tipo.
+			-> text/html: Um documento HTML, que é o código usado para criar páginas da web.
+			-> text/css: Um arquivo CSS, que é usado para controlar o estilo de uma página da web.
+			-> text/javascript: Um arquivo JavaScript, que é usado para adicionar interatividade a uma página da web.
+			-> video/mp4: Um arquivo de vídeo MP4.
+			-> video/H264: Um formato de vídeo que é comumente usado em streaming de vídeo.
+			-> video/JPEG: Um formato de vídeo que é comumente usado em câmeras digitais.
+			-> audio/aac: Um formato de áudio que é comumente usado em streaming de áudio.
+			-> audio/mpeg: Um formato de áudio que é comumente usado em CDs de áudio.
+			-> font/ttf: Um arquivo de fonte TrueType, que é um tipo de fonte digital.
+			-> image/jpeg: Um arquivo de imagem JPEG, que é um formato de imagem comumente usado em fotografias.
+			-> image/png: Um arquivo de imagem PNG, que é um formato de imagem sem perdas.
+		
+		Agora aprenderemos sobre "Imagens Flexíveis". Para efetuá-las codaremos o seguinte:
+			<picture>
+  				<source media="(max-width: 750px)" src="foto-p.png" type="image/png">
+  				<source media="(max-width: 1050px)" src="foto-m.png" type="image/png">
+  				<img src="foto-g.png" alt="A imagem flexível funciona">
+			</picture>
+		
+		Aqui está uma explicação mais detalhada do código:
+			
+			-> O elemento <picture> é usado para definir uma imagem flexível.
+			-> O elemento <source> é usado para definir uma fonte de imagem. O atributo media especifica as condições em que a fonte de imagem 			deve ser usada. <!--Note que a tag <source> possui três atributos:
+				> type: vai indicar o media type da imagem que usamos.
+				> srcset: vai configurar o nome da imagem que será carregada quando o tamanho indicado for atingido
+				> media: indica o tamanho máximo a ser considerado para carregar a imagem indicada no atributo srcset.-->
+			-> O elemento <img> é usado para inserir a imagem.
+			-> O atributo alt é usado para fornecer uma descrição da imagem.</p>
+		
+		Para adicionar um AÚDIO devemos codar o seguinte:
+			
+			<audio preload="metadata" controls autoplay loop>
+			<source src="midia/example.mp3" type="audio/mpeg">
+			<source src="midia/example.ogg" type="audio/ogg">
+			<source src="midia/example.wav" type="image/wav">
+			<p>Seu navegador não suporta áudio <a href="midia/example.mp3"
+			download="example.mp3"></a></p></audio>
+
+		Principais atributos da tag <audio>:
+
+			-> preload: indica se o áudio será pré-carregado ou não e aceita três valores:
+			-> metadata: vai carregar apenas as informações sobre o arquivo (tamanho, tempo, informações de direitos, etc)
+			-> none: não vai carregar absolutamente nada até que o usuário clique no botão play ou um script inicie a reprodução
+			-> auto (padrão): vai carregar o arquivo de áudio inteiro assim que a página for carregada, mesmo que o usuário nunca aperte o play
+			-> controls: apresenta o player na tela. Caso não seja colocado na tag <audio>, o controle será transparente e o usuário não poderá 			interagir com ele.
+			-> autoplay: quando inserido, vai iniciar a reprodução do áudio assim que a página for carregada.
+			-> loop: vai fazer com que o áudio seja repetido eternamente assim que terminar a sua reprodução.</p>
+		
+		Para inserir um vídeo em nosso site, podemos utilizar a nova tag <video> da HTML5, caso o arquivo esteja hospedado no nosso próprio servidor. Para isso, vamos criar uma tag <video> com os seguintes atributos:
+
+			-> width: indica a largura que o vídeo vai ter na tela. Nesse exemplo, 600px.
+			-> poster: configura uma imagem que vai aparecer como uma capa, enquanto o visitante não aperta o play para reproduzir o vídeo.
+			-> controls: configura se os controles do vídeo vão aparecer na parte inferior da mídia. Por padrão, os controles não aparecerão, 			mas basta colocar a palavra "controls" na tag <video>.
+			-> autoplay: diz para o navegador se o vídeo vai começar a tocar automaticamente, assim que a página for carregada.
+
+		A seguir, vamos adicionar uma ou mais tags <source> com os seguintes atributos:
+
+			-> src: indica a URL do arquivo de vídeo.
+			-> type: indica o tipo de arquivo de vídeo.
+
+		O navegador vai escolher a primeira fonte de vídeo que ele suportar. Se o navegador não suportar nenhum dos formatos de vídeo especificados, ele mostrará uma mensagem de erro.
+Aqui está um exemplo de código HTML que pode ser usado para inserir um vídeo em um site:
+
+			<video width="600" poster="thumb.jpg" controls autoplay>
+  				<source src="meu-video.webm" type="video/webm">
+  				<source src="meu-video.mp4" type="video/mp4">
+  				<source src="meu-video.ogv" type="video/ogg">
+			</video>

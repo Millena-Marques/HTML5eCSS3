@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="MillErns.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente mude o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/Imagem_P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/Imagem_M.png"
+        type="image/png">
+        <img src="Imagens/Imagem_G.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <audio src="Mídia/Aquarela.m4a" controls autoplay></audio>
+    <!--MP3, WAV e OGG-->
+    <br><audio preload="metadata" controls loop>
+        <source src="Mídia/Oia_Millena_.m4a" type="audio/mpeg">
+        <source src="Mídia/Oia_Millena_.ogg" type="audio/ogg">
+        <source src="Mídia/Oia_Millena_.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não é compatível para reproduzir este áudio. Se você quiser ouvir baixe o áudio através do link abaixo &#x1F447;</p>
+        <a href="Mídia/Oia_Millena_.m4a" download="Mídia/Oia_Millena_.m4a">Clique aqui para baixar seu MP3</a>
+    </audio>
+</body>
+</html>

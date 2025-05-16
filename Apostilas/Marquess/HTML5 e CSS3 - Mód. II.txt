@@ -1,0 +1,246 @@
+HTML5 e CSS3 - Mód. II
+
+	7- Cores:
+		Para a criação de um site, precisamos estudar formas de deixá-lo atraente para os seus visitantes; por isso, temos a "Psicologia das Cores". Veremos a seguir como isso funciona:
+	__________________________________________________________________________________________________________________________________________________
+	--------------------------------------------------------------------------------------------------------------------------------------------------
+	||	Cor	||		Associada a...		||		Usar em...	    	||		Evitar				||
+	||==============||======================================||======================================||================================================
+	|| 🔴 Vermelho	-> amor, emoção, energia, raiva,   	-> comida, moda, entretenimento,  	-> luxo, natureza, serviços em geral.		||
+	||		|| perigo, etc.				|| serviços de emergência e saúde.	||						||
+	||==============||======================================||======================================||================================================
+	|| 🟡 Amarelo	-> felicidade, alegria, otimismo,	-> dar luz, dar calma e felicidade,	-> pode indicar que algo é barato ou spam.	||
+	||		|| covardia, etc.			|| chamar atenção, etc.			||						||
+	||==============||======================================||======================================||================================================
+	|| 🟠 Laranja	-> divertimento, ambição, calor,	-> comércio eletrônico, entretenimento,	-> pode se tornar consativo se muito for	||
+	||		|| cautela, etc.			|| etc.					|| explorado.					||
+	||==============||======================================||======================================||================================================
+	|| 🟢 Verde	-> saúde, natureza, dinheiro, sorte,	-> relaxamento, turismo, financeiros,	-> luxo, tecnologia, meninas adolescentes, etc.	||
+	||		|| inveja, etc.				|| meio-ambiente, etc.			||						||
+	||==============||======================================||======================================||================================================
+	|| 🔵 Azul	-> competência, sabedoria, calma, frio,	-> tecnologia, medicina, ciências,	-> comida (reduz o apetite).			||
+	||		|| etc.					|| governo, etc.			||						||
+	||==============||======================================||======================================||================================================
+	|| 🟣 Roxo	-> criatividade, poder, sabedoria,	-> produtos de beleza, astrologia	-> não prende muito a atenção, indiferente.	||
+	||		|| mistério, etc.			|| espiritualidade, adolescente, etc.	||						||
+	||==============||======================================||======================================||================================================
+	|| 🟤 Marrom	-> terra, robustez, estabilidade,	-> alimentação, imobiliária, animais,	-> cor considerada conservadora.		||
+	||		|| amizade, etc.			|| finanças, et.			||						||
+	||==============||======================================||======================================||==============================================||
+	|| ⚫ Preto	-> elegância, autoridade, mistério,	-> luxo, moda, marketing, cosméticos,	-> desconforto e medo.				||
+	||		|| morte, etc.				|| etc.					||						||
+	||==============||======================================||======================================||==============================================||
+	|| ⚪ Branco	-> pureza, limpeza, felicidade,		-> medicina, saúde, tecnologia, luxo	-> não chama a atenção, deve ser combinado.	||
+	||		|| segurança, etc.			|| (com preto, ouro, cinza).		||						||
+	||==============||======================================||======================================||==============================================||
+	|| 🩶 Cinza	-> formalidade, sofisticação, frieza,	-> bens de luxo, efeito calmante.	-> dá a sensação de frieza.			||
+	||		|| indiferença, etc.			||					||						||
+	||==============||======================================||======================================||==============================================||
+	|| 🩷 Rosa	-> amor, romance, sinceridade,		-> produtos femininos e cosméticos.	-> pode tornar algo muito sentimental e doce.	||
+	||		|| cuidados, etc.			||					||						||
+	||==============||======================================||======================================||==============================================||
+	__________________________________________________________________________________________________________________________________________________
+	--------------------------------------------------------------------------------------------------------------------------------------------------
+
+		A REPRESENTAÇÃO DE CORES é um tema bastante complexo. Porém, existem diversas maneiras (cada vez mais fáceis) de se representar uma cor.
+
+							Temos:
+
+					-> Representação por NOME. Ex <> blue | red | green
+
+					-> Representação por NÚMEROS HEXADECIMAIS.
+					<!-- Decimal = 0 1 2 3 4 5 6 7 8 9 -->
+    					<!-- Hexadecimal = 0 1 2 3 4 5 6 7 8 9 A B C D F --> 
+					Ex <> #0000ff | #ff0000 | #008000
+
+					-> Representação por RGB (Red, Green and Blue).
+					Ex <> rgb(0, 0, 255) | rgb(255, 0, 0) | rgb(0, 128, 0)
+
+					-> Representação por HSL (Hue, Saturation and Luminosity).
+					Ex <> hsl(240, 100%, 50%) | hsl(0, 100%, 50%) | hsl(120, 100%, 25%)
+
+	
+	*OBS: no painel de cores, estará 3 espaços. 1- determina a cor | 2- determina o tom da cor | 3- determina a transparência da cor. Além disso,
+	quando abreviaturas como - rgba e hsla aparecerem, estará afirmando que aquela cor possui um certo tom de transparência envolvido.
+
+		Quando estudamos "Harmonia de Cores", devemos saber:
+
+			-> Cores Primárias: Vermelho - 🔴 | Amarelo - 🟡 | Azul - 🔵
+
+			-> Cores Secundárias: Laranja - 🟠 | Violeta - 🟣 | Verde - 🟢
+
+			-> Temperatura de Cores: Quentes - 🔴🟠🟡 | Frias - 🟢🔵🟣
+
+	*OBS: as cores terciárias, são a junção das cores primárias com as secundárias.
+
+		O primeiro passo para formular uma paleta de cor para o site é, escolher (antes de tudo) a cor de acordo com sua emoção. 
+	Para ficar melhor, usamos os conceitos de: 
+
+			-> Cores Complementares, são aquelas que, dentro do círculo cromático, estão posicionadas nas extremidades opostas.
+			Por exemplo: 🔵 + 🟠
+
+				     🔴 + 🟢
+
+				     🟡 + 🟣
+
+			-> Cores Análogas, são aquelas que estão próximas umas das outras dentro do círculo cromático. Cada uma das cores análogas 				compartilham uma mesma cor básica.
+
+			-> Cores Análogas e uma Complementar, bom, é meio óbvio mas, basicamente, seleciona uma cor principal, adiciona suas cores análogas 			e traça uma linha oposta a sua cor principal.
+
+			-> Cores Análogas Relacionadas, seleciona duas cores e intercala e seleciona a cor após a que foi pulada.
+
+			-> Cores Intercalada, como o próprio nome já diz, há intervalos na seleção das cores. Dentro dessa categoria temos: 
+
+														1- Cores Triádicas;
+
+														2- Cores em Quadrado;
+
+														3- Cores Tetrádicas.
+
+			-> Monocromia, é quando usamos apenas uma cor no nosso trabalho. Conseguimos efeitos diversos apenas variando a intensidade e os 			tons das cores.
+
+		O DEGRADÊ, é programado da seguinte forma:
+
+						/*Configuração Global das CSS's*/
+							* {
+								height: 100%;
+							}
+
+						body {
+    							background-image: linear-gradient(- direção do gradiente -, - cores -);
+    							background-attachment: fixed; -> para que o degradê fixe na tela.
+						}
+
+		8- Fontes:
+			Quando estamos trabalhando com o tamanho de fontes, temos:
+
+				-> Medidas Absolutas:
+					cm, mm, in, px, pt, pc...
+
+				-> Medidas Relativas:
+					em, ex, rem, vw, vh, %...
+					16px = 1em -> A W3C recomenda o uso do "em".
+
+			Quando estamos falando sobre SHORTHAND, podemos usar de exemplo:
+
+				font-family: 'Work Sans', sans-serif;
+				font-weight: lighter/normal/bold/bolder/100 - 900 (intensidade em porcentagem);
+				font-size: 1em;
+				font-style: italic;
+
+			... Ou, para simplificar, usamos:
+
+				font-style > font-weight > font-size > font-family
+
+			Para usarmos FONTES EXTERNAS BAIXADAS, devemos codar o seguinte:
+
+				<style>
+					@font-face {
+						font-family: 'Exemplo';
+						src: url('Pasta/Exemplo.ttf/otf') format('truetype/opentype');
+					}
+						/*
+							Tipos de format()
+							-> truetype (.ttf)
+							-> opentype (.otf)
+							-> embedded-opentype
+							-> truetype-aat (Apple Advanced Typography)
+							-> svg
+					*/
+				</style>
+
+			Para identificar fontes a partir de imagens, podemos usar os seguintes sites:
+
+				-> whatfontis.com
+				-> myfontis.com
+
+			Para fazer o ALINHAMENTO DO TEXTO, usamos os seguintes comandos em CSS:
+
+				style {
+
+					text-align: center, justify, left/right;
+					text-indent: 30px; /*Indica a proporção do recuo de um parágrafo.*/
+
+				}
+
+			9- SELETORES PERSONALIZADOS:
+
+					HTML
+				<h1 id="principal">Lorem</h1>
+
+					CSS
+
+				h1#princicpal{
+					exemplo: 0px;
+				}
+
+			OBS: Em HTML, id = # em CSS | Como também em HTML, class = . em CSS
+			O id é para configurações de elementos únicos, já o class é para conjuntos de múltiplos elementos.
+
+			Para diferenciar/separar várias tags em conjunto, utilizamos o class, ex:
+
+					HTML
+				<h1 class="exemplo">Lorem</h1>
+				<h2 class="exemplo">Lorem</h2>
+
+					CSS
+				.exemplo{
+					color: exemplo;
+				}
+
+			Para determinar o estado, nas CSS usamos as pseudo-class = :
+
+			Para modificar uma tag que se encontra dentro de outra, em CSS utilizamos o elemento children = >
+
+			O pseudo-element = ::
+
+			10- MODELO DE CAIXAS:
+
+				Naturalmente, temos os modelos box-level e inline-level.
+
+								Temos em HTML:
+
+							BOX-LEVEL
+
+								<div>
+								<h1> - <h6>
+								<p>
+
+							INLINE-LEVEL
+
+								<span>
+								<sub> - <sup>
+								<a>
+
+								Temos em CSS:
+
+						-> box-size: width, height, etc - com exceção da inline-level, 
+						mas podemos adaptá-la mudando o display;
+
+						-> padding: auto, top, right, bottom, left, etc;
+
+						-> border: width, style, ect;
+
+						-> outline: width, style, etc;
+
+						-> margin: auto, top, right, bottom, left, etc.
+
+			OBS: Como qualquer elemento das CSS, podemos simplificá-los usando SHORTHANDS.
+
+							Elementos em HTML Box-level:
+
+					<address>   <article>   <aside>   <blockquote>   <canvas>    <dd>
+					<div>   <dl>   <dt>   <fieldset>   <figcaption>   <figure>
+					<footer>   <form>   <h1> - <h6>   <header>   <hr>   <li>
+					<main>   <nav>   <noscript>   <ol>   <p>   <pre>
+					<section>   <table>   <tfoot>   <ul>   <video>
+
+							Elementos em HTML Inline-level:
+
+					<a>   <abbr>   <acronym>   <b>   <bdo>   <br>
+					<button>   <cite>   <code>   <dfn>   <em>   <i>
+					<img>   <input>   <kbd>   <label>   <map>   <object>
+					<output>   <q>   <samp>   <script>   <select>   <small>
+					<span>   <strong>   <sub>   <textarea>   <tt>   <var>
+
+			

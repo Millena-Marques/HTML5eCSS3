@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body{
+    background-color:cadetblue;
+}
+h1{
+    background-color:beige;
+    color:darkcyan;
+}
+h2{
+    color:antiquewhite;
+}
+p{
+    color:bisque;
+    text-align: justify;
+    font-size: 17.5px;
+}
+a{
+    color:darkslategray;
+    font-size: 25px;
+}

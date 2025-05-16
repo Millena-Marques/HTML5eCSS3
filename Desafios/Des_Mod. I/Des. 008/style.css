@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body{
+    background-color: slategray;
+}
+h1{
+    background-color: azure;
+    color: black;
+}
+p{
+    color: white;
+    font-size: 17.5px;
+}
+a{
+    color: whitesmoke;
+    font-size: 20px;
+}
