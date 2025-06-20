@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url('imagens/wallpaper006.jpg');
+}
+
+#boxer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(45, 101, 255, 0.71);
+    height: 300px;
+    width: 300px;
+    color: azure;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 15px;
+}
+
+#b2{
+    background-image: linear-gradient(to bottom, rgba(170, 193, 255, 0.71), rgba(0, 68, 255, 0.71));
+}
+
+#b3{
+    background-image: url(imagens/wallpaper002.jpg);
+}
+
+#b4{
+    background-image: url(https://github.com/gustavoguanabara/html-css/blob/master/imagens/mascote.png);
+}
