@@ -1,1 +1,8 @@
 HTML5 e CSS3 - Mód. III
+		Para adicionar imagens externas de fundo em CSS, precisaremos codar o seguinte...
+	Ex:
+		body{
+			background-image: url(https.//...png?raw=true);
+	}
+
+		Para o background-position, sempre iremos seguir a ordem de: 1° coluna - left, right, center; 2° linha - top, bottom, center.
