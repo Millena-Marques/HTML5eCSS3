@@ -6,3 +6,16 @@ HTML5 e CSS3 - Mód. III
 	}
 
 		Para o background-position, sempre iremos seguir a ordem de: 1° coluna - left, right, center; 2° linha - top, bottom, center.
+	O background-size pode ser configurado em: px, %, contain, cover. Shorthand Backgroung: color > image > position > repeat > [size]
+	> attachment. Para centralizar verticalmente, podemos usar:
+
+			#caixa{
+				position: relative;
+			}
+
+			#conteudo{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
