@@ -28,9 +28,30 @@ HTML5 e CSS3 - Mód. III
 				<tr> - Table Row = Linha de Tabela;
 
 					<th> - Table Header = Cabeçalho de Tabela;
+					<td> - Table Data = Dados de Tabela.
 
 	ALINHAMENTO DE TABELA:
 
 			<text-align> /*Alinhamento Horizontal*/
 	
 			<vertical-align> /*Alinhamento Vertical*/
+
+	ANATOMIA DE TABELAS (COMPOSTAS):
+
+			<table>
+				<thead>
+					<tr>
+						<th>
+						<td>
+
+				<tbody>
+					<tr>
+						<th>
+						<td>
+
+				<tfoot>
+					<tr>
+						<th>
+						<td>
+
+	
