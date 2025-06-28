@@ -19,3 +19,18 @@ HTML5 e CSS3 - Mód. III
 				top: 50%;
 				transform: translate(-50%, -50%);
 			}
+
+		Para iniciar os estudos em TABELAS, devemos saber que: NÃO AS USAMOS PARA LAYOUT DE SITES!
+	HIERARQUIA DE TABELAS (SIMPLES):
+
+			<table> - Table = Tabela;
+
+				<tr> - Table Row = Linha de Tabela;
+
+					<th> - Table Header = Cabeçalho de Tabela;
+
+	ALINHAMENTO DE TABELA:
+
+			<text-align> /*Alinhamento Horizontal*/
+	
+			<vertical-align> /*Alinhamento Vertical*/
