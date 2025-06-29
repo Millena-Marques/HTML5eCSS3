@@ -39,6 +39,9 @@ HTML5 e CSS3 - Mód. III
 	ANATOMIA DE TABELAS (COMPOSTAS):
 
 			<table>
+
+				<caption> = Legenda;
+
 				<thead>
 					<tr>
 						<th>
@@ -54,4 +57,31 @@ HTML5 e CSS3 - Mód. III
 						<th>
 						<td>
 
-	
+		Principalmente quando usamos o <th>, é recomendado que se use um parâmetro de ESCOPO para definir a localização dos dados ao navegador. 	Então é importante que,
+			...<th scope="col/row">
+
+		Para fazer o EFEITO ZEBRADO na tabela, precisamos codar alguns parâmetros como esse de exemplo:
+
+		EX.
+
+			tbody > tr:nth-child(odd){
+    				background-color: lightblue;
+			}
+
+			tbody > tr:nth-child(even){
+    				background-color: aliceblue;
+			}
+
+	Para fazer CABEÇALHOS FIXOS em tabelas grandes devemos codar o seguinte:
+
+		EX.
+
+			table{
+				position: relative;
+			}
+
+			thead > tr > th{
+				position: sticky;
+				top: 0;
+				background-color: darkgray;
+			}
