@@ -32,9 +32,9 @@ HTML5 e CSS3 - Mód. III
 
 	ALINHAMENTO DE TABELA:
 
-			<text-align> /*Alinhamento Horizontal*/
+			text-align: /*Alinhamento Horizontal*/
 	
-			<vertical-align> /*Alinhamento Vertical*/
+			vertical-align: /*Alinhamento Vertical*/
 
 	ANATOMIA DE TABELAS (COMPOSTAS):
 
@@ -88,3 +88,9 @@ HTML5 e CSS3 - Mód. III
 
 		Na MESCLAGEM DE CÉLULAS, em HTML5, podemos expandir em linhas = rowspan, e em colunas = colspan.
 	Lembrando que, isso são parâmetros que se encontram dentro das tags de tabela.
+
+		O ESCOPOS DE GRUPOS é quando uma th agrupa diversos elementos. Esse parâmetro não é um configuração visual, porém, informa o site sobre
+	as configurações da tabela mostrada. Temos:
+
+		EX.
+			...<th scope="colgroup/rowgroup">
