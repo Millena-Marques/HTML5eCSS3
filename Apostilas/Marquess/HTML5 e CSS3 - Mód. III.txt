@@ -85,3 +85,6 @@ HTML5 e CSS3 - Mód. III
 				top: 0;
 				background-color: darkgray;
 			}
+
+		Na MESCLAGEM DE CÉLULAS, em HTML5, podemos expandir em linhas = rowspan, e em colunas = colspan.
+	Lembrando que, isso são parâmetros que se encontram dentro das tags de tabela.
