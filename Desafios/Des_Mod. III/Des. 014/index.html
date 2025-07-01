@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="M1ll3rns.ico" type="image/x-icon">
+    <title>Tabelas</title>
+</head>
+<body>
+    <header>
+        <h1>Desafio de Tabelas</h1>
+    </header>
+
+    <main>
+        <div id="container">
+            <table>
+                <caption>Boletim</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" rowspan="2">Área</th>
+                        <th scope="col" rowspan="2">Disciplinas</th>
+                        <th scope="colgroup" colspan="3">Notas</th>
+                        <th scope="col" rowspan="2">Média</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Teste Bimestral</th>
+                        <th scope="col">Trabalho Avaliativo</th>
+                        <th scope="col">Prova Final</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="rowgroup" rowspan="6" class="area">Humanas</th>
+                        <th>Português</th>
+                        <td>9.0</td>
+                        <td>9.5</td>
+                        <td>9.0</td>
+                        <td>9.2</td>
+                    </tr>
+                    <tr>
+                        <th>Inglês</th>
+                        <td>9.0</td>
+                        <td>9.5</td>
+                        <td>9.0</td>
+                        <td>9.2</td>
+                    </tr>
+                    <tr>
+                        <th>Espanhol</th>
+                        <td>8.0</td>
+                        <td>8.5</td>
+                        <td>8.0</td>
+                        <td>8.2</td>
+                    </tr>
+                    <tr>
+                        <th>Biologia</th>
+                        <td>9.0</td>
+                        <td>9.5</td>
+                        <td>9.0</td>
+                        <td>9.2</td>
+                    </tr>
+                    <tr>
+                        <th>História</th>
+                        <td>9.5</td>
+                        <td>10.0</td>
+                        <td>9.5</td>
+                        <td>9.7</td>
+                    </tr>
+                    <tr>
+                        <th>Geografia</th>
+                        <td>8.5</td>
+                        <td>9.0</td>
+                        <td>8.5</td>
+                        <td>8.7</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="3" class="media">Média de Humanas</th>
+                        <td colspan="3" class="media">9.0</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3" scope="rowgroup" class="area">Exatas</th>
+                        <th>Matemática</th>
+                        <td>9.5</td>
+                        <td>10.0</td>
+                        <td>9.0</td>
+                        <td>9.5</td>
+                    </tr>
+                    <tr>
+                        <th>Física</th>
+                        <td>9.5</td>
+                        <td>9.5</td>
+                        <td>9.0</td>
+                        <td>9.5</td>
+                    </tr>
+                    <tr>
+                        <th>Química</th>
+                        <td>9.0</td>
+                        <td>9.5</td>
+                        <td>8.5</td>
+                        <td>9.0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="3" class="media">Média de Exatas</th>
+                        <td colspan="3" class="media">9.5</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="4">Média Geral</th>
+                        <td colspan="2">9.2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

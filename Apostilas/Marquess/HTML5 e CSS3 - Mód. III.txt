@@ -94,3 +94,5 @@ HTML5 e CSS3 - Mód. III
 
 		EX.
 			...<th scope="colgroup/rowgroup">
+
+		Para fazer TABELAS RESPONSIVAS, podemos envelopar a tabela inteira com uma <div#container> e colocar um overflow-x: auto; no style.css.
